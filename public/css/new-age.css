@@ -62,6 +62,7 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 section {
@@ -512,6 +513,11 @@ section.appro {
   color: var(--light-text-color);
 }
 
+section.appro p, section.rules p {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
 section.appro h2 {
   font-size: 50px;
   margin-top: 0;
@@ -526,6 +532,10 @@ section#info {
   section#info {
     padding-bottom: 50px;
   }
+
+  section.appro p, section.rules p {
+    padding: 0;
+  }
 }
 
 .two-col-section {
@@ -538,13 +548,23 @@ section#info {
 }
 
 @media (min-width: 992px) {
-  .two-col-section > * {
+  .two-col-section > div {
     width: 50%;
-    padding: 2rem 2rem 0 2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
 
   .two-col-section {
     flex-direction: row;
+  }
+}
+
+.tutkinnot {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .tutkinnot {
+    text-align: justify;
   }
 }
 
